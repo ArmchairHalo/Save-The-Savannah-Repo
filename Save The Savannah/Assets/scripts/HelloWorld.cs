@@ -9,10 +9,12 @@ using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
 {
+
+    public string message = "Hello World";
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello World");
+        Debug.Log(message);
     }
 
     // Update is called once per frame
