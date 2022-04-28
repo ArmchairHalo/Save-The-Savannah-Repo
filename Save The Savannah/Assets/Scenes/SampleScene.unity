@@ -596,6 +596,7 @@ GameObject:
   - component: {fileID: 1847072252}
   - component: {fileID: 1847072251}
   - component: {fileID: 1847072250}
+  - component: {fileID: 1847072253}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -620,8 +621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130.9, y: -64.4}
-  m_SizeDelta: {x: 51.8635, y: 43.3464}
+  m_AnchoredPosition: {x: -477, y: -264}
+  m_SizeDelta: {x: 263.0506, y: 158.7597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847072250
 MonoBehaviour:
@@ -666,7 +667,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1847072251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847072253}
+        m_TargetAssemblyTypeName: TestButton, Assembly-CSharp
+        m_MethodName: Testbutton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1847072251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,3 +718,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847072248}
   m_CullTransparentMesh: 1
+--- !u!114 &1847072253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847072248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b8cca0c84f94b428c43e423f478a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
