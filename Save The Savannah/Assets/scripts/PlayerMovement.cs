@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 2;
+
     private Rigidbody2D physicsBody = null;
 
 
@@ -22,8 +23,18 @@ public class PlayerMovement : MonoBehaviour
         float axisVal = Input.GetAxis("Horizontal");
 
         float axisVal2 = Input.GetAxis("Vertical");
-        physicsBody.velocity = new Vector2(axisVal * speed, axisVal2 * speed);
+        //physicsBody.velocity = new Vector2(axisVal * speed, axisVal2 * speed);
 
         // (x axis value, y axis value)
+    }
+
+    public void MoveRight()
+    {
+        physicsBody.velocity = new Vector2(speed, 0);
+    }
+
+    public void MoveLeft()
+    {
+        physicsBody.velocity = new Vector2(-speed, 0);
     }
 }
