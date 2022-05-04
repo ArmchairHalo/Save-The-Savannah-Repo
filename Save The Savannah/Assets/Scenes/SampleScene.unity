@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c592c53f576b0842b8f7627e6a1bba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: Level 1
 --- !u!61 &677457084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -851,8 +852,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -481, y: -276}
-  m_SizeDelta: {x: 222.2168, y: 148.9033}
+  m_AnchoredPosition: {x: -730.85126, y: -394.01935}
+  m_SizeDelta: {x: 361.4115, y: 202.6158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847072250
 MonoBehaviour:
@@ -996,8 +997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -238.89932, y: -276}
-  m_SizeDelta: {x: 231.1178, y: 148.9}
+  m_AnchoredPosition: {x: -313.574, y: -394.02}
+  m_SizeDelta: {x: 339.6795, y: 202.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891209300
 MonoBehaviour:
