@@ -42,18 +42,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        Debug.Log("JumpPressed");
+        //Debug.Log("JumpPressed");
         if (canJump)
         {
+            //Debug.Log("AttemptJump");
             physicsBody.velocity = new Vector2(physicsBody.velocity.x, jumpSpeed);
-            Debug.Log("AttemptJump");
             canJump = false;
         }
 
     }
     private void FixedUpdate()
     {
+        //Debug.Log("groundLayer = " + groundLayer);
+        //Debug.Log("groundCheckPos.position = " + groundCheckPos.position);
         canJump = Physics2D.OverlapCircle(groundCheckPos.position, 0.1f, groundLayer);
-        
+        //Debug.Log("canJump = " + canJump);
+
     }
 }
