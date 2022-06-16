@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 2;
-
+    public float jumpSpeed = 20;
+    public Transform groundCheckPos;
+    public LayerMask groundLayer;
     private Rigidbody2D physicsBody = null;
-
+    private bool canJump = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +32,28 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-        physicsBody.velocity = new Vector2(speed, 0);
+        physicsBody.velocity = new Vector2(speed, physicsBody.velocity.y);
     }
 
     public void MoveLeft()
     {
-        physicsBody.velocity = new Vector2(-speed, 0);
+        physicsBody.velocity = new Vector2(-speed, physicsBody.velocity.y);
+    }
+
+    public void Jump()
+    {
+        Debug.Log("JumpPressed");
+        if (canJump)
+        {
+            physicsBody.velocity = new Vector2(physicsBody.velocity.x, jumpSpeed);
+            Debug.Log("AttemptJump");
+            canJump = false;
+        }
+
+    }
+    private void FixedUpdate()
+    {
+        canJump = Physics2D.OverlapCircle(groundCheckPos.position, 0.1f, groundLayer);
+        
     }
 }
