@@ -41,4 +41,12 @@ public class PlayerHealth : MonoBehaviour
             kill();
         }
     }
+
+    //getter function to give information to the calling code
+    //the int means that an interger (whole number) will be given back
+    //the return is what will be given back
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
 }
